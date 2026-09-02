@@ -6,3 +6,16 @@ body
     padding: 10px;
     color: black;
 }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background: linear-gradient(270deg, #000000 0%, #0d0213 100%);
+    border-right: 2px solid #2a033f;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
