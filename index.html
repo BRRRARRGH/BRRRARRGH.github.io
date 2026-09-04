@@ -9,37 +9,39 @@
 </head>
 
 <body>
+  
+    <input class="tab-control" type="radio" name="tabs" id="home-tab" checked></br>
+    <input class="tab-control" type="radio" name="tabs" id="streaming-tab"></br>
+    <input class="tab-control" type="radio" name="tabs" id="link-tab">
+    
     <div class="sidebar">
-        <input class="tab-control" type="radio" name="tabs" id="home-tab" checked>
-        <input class="tab-control" type="radio" name="tabs" id="genres-tab">
-        <input class="tab-control" type="radio" name="tabs" id="games-tab">
-        <input class="tab-control" type="radio" name="tabs" id="consoles-tab">
-
-        <nav class="tab-nav" aria-label="Main navigation">
-        <label for="home-tab" class="tab-link">Home</label>
-        <label for="genres-tab" class="tab-link">Genres</label>
-        <label for="games-tab" class="tab-link">Games</label>
-        <label for="consoles-tab" class="tab-link">Consoles</label>
-        </nav>
+      <nav class="tab-nav" aria-label="Main navigation">
+        <label for="home-tab" class="tab-link">Home</label></br>
+        <label for="streaming-tab" class="tab-link">Streaming</label></br>
+        <label for="link-tab" class="tab-link">Links</label>
+      </nav>
     </div>
   <main>
 
 
-    <section class="tab-panel home-panel" id="home" aria-labelledby="home-tab">
+    <section class="tab-panel" id="home" aria-labelledby="home-tab">
+      <p>HI1</p>
     </section>
 
-    <section class="tab-panel" id="genres" aria-labelledby="genres-tab">
+    <section class="tab-panel" id="streaming" aria-labelledby="streaming-tab">
+      <p>HI2</p>
     </section>
 
-    <section class="tab-panel games-panel" id="games" aria-labelledby="games-tab">
+    <section class="tab-panel" id="links" aria-labelledby="link-tab">
+      <p>HI3</p>
     </section>
 
-    <section class="tab-panel" id="consoles" aria-labelledby="consoles-tab">
-    </section>
+
   </main>
 
   <footer class="footer">
   </footer>
 </body>
+
 
 </html>
