@@ -1,7 +1,11 @@
 body
 {
     text-align: center;
-    background-color: pink;
+    background: linear-gradient(
+        270deg,
+        #ffffff 0%,
+        #3f084d 30%
+    );
     font-family: 'Times New Roman', Times, serif;
     padding: 0px;
     color: black;
@@ -19,14 +23,12 @@ body
     gap: 0px;
     margin: 0 auto;
     padding: 0px;
-    background-color: white;
 }
 
 .sidebar {
     flex: 0 0 300px;
     display: flex;
     flex-direction: column;
-    background-color: green;
     justify-content: center;
     align-content: center;
     height: 100vh;
@@ -51,9 +53,11 @@ body
 }
 
 main {
-    flex: 1; /* Takes remaining space */
-    text-align: left;
+    flex: 1; 
+    text-align: center;
     padding: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
 .tab-panel { display: none;}
