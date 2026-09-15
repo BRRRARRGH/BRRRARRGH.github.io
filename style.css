@@ -13,29 +13,22 @@ body
     margin: 0;
 }
 
-.tab-control {
+img
+{
+    max-width: 25%;
+    left: 0;
+    height: auto;
+}
+
+.tab-control 
+{
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-.container {
-    display: flex;
-    gap: 0px;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.sidebar {
-    flex: 0 0 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
-}
-
-.tab-link {
+.tab-link 
+{
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -43,32 +36,95 @@ body
     background-color: white;
 }
 
-.tab-link:hover {
+.tab-link:hover 
+{
     background-color: #7a7a7a;
+}
+
+.container 
+{
+    display: flex;
+    gap: 0px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.sidebar 
+{
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
 }
 
 #home-tab:checked ~ .container .sidebar label[for="home-tab"],
 #streaming-tab:checked ~ .container .sidebar label[for="streaming-tab"],
-#link-tab:checked ~ .container .sidebar label[for="link-tab"] {
+#link-tab:checked ~ .container .sidebar label[for="link-tab"],
+#lists-tab:checked ~ .container .sidebar label[for="lists-tab"] 
+{
     background-color: pink;
     font-weight: bold;
 }
 
-main {
+.headerstuff 
+{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.titles 
+{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    grid-column: 2;
+}
+
+main 
+{
     flex: 1; 
     text-align: center;
     padding: 20px;
     justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 
-.tab-panel { display: none;}
+.headerimageLeft
+{
+    grid-column: 1;
+    display: flex;
+}
+
+
+.block
+{
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: white;
+    align-content: center;
+    width: 50%;
+}
+
+.tab-panel {
+    display: none;
+
+}
 #home-tab:checked ~ .container main #home,
 #streaming-tab:checked ~ .container main #streaming,
-#link-tab:checked ~ .container main #links { 
-    display: block; 
-}
-
-.titles {
-    color: white;
-    font-size: 50px;
+#link-tab:checked ~ .container main #links,
+#lists-tab:checked ~ .container main #lists { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
 }
