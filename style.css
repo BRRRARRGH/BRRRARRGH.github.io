@@ -29,7 +29,7 @@ img
 
 .tab-link 
 {
-    padding: 10px 15px;
+    padding: 25px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -39,6 +39,7 @@ img
 .tab-link:hover 
 {
     background-color: #7a7a7a;
+    transform: translateX(20px);
 }
 
 .container 
@@ -102,6 +103,13 @@ main
     display: flex;
 }
 
+.centeredItems
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .block
 {
@@ -122,9 +130,7 @@ main
 #streaming-tab:checked ~ .container main #streaming,
 #link-tab:checked ~ .container main #links,
 #lists-tab:checked ~ .container main #lists { 
-    display: flex; 
-    flex-direction: column;
+    display: block; 
     align-items: center;
-    align-content: center;
     width: 100%;
 }
