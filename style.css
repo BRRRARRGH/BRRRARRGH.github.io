@@ -4,7 +4,9 @@ body
     background: linear-gradient(
         335deg,
         #000000 0%,
+        #d7a3e4 25%,
         #801e99 50%,
+        #380346 75%,
         #000000 100%
     );
     font-family: 'Times New Roman', Times, serif;
@@ -16,7 +18,6 @@ body
 img
 {
     max-width: 25%;
-    left: 0;
     height: auto;
 }
 
@@ -79,6 +80,24 @@ img
     width: 100%;
 }
 
+.headerimageLeft
+{
+    grid-column: 1;
+    display: flex;
+    align-items: center; 
+    padding-left: 20%; 
+    justify-content: flex-start;
+}
+
+.headerimageRight
+{
+    grid-column: 3;
+    display: flex;
+    align-items: center; 
+    padding-right: 20%; 
+    justify-content: flex-end;
+}
+
 .titles 
 {
     color: white;
@@ -92,16 +111,11 @@ main
     flex: 1; 
     text-align: center;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
+    display: flex;
     font-size: 40px;
 }
 
-.headerimageLeft
-{
-    grid-column: 1;
-    display: flex;
-}
+
 
 .centeredItems
 {
@@ -109,17 +123,19 @@ main
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
+    gap: 20px;
 }
 
 .block
 {
     padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
     background-color: white;
     align-content: center;
     width: 50%;
+    margin: 0 auto;
 }
 
 .tab-panel {
@@ -130,7 +146,9 @@ main
 #streaming-tab:checked ~ .container main #streaming,
 #link-tab:checked ~ .container main #links,
 #lists-tab:checked ~ .container main #lists { 
-    display: block; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
