@@ -9,6 +9,12 @@ body
     font-size: 16px;
 }
 
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
 .imageInContainer
 {
     float: left;
@@ -59,7 +65,6 @@ body
 {
     background-image: url("images/haikuyuu.png"); 
     background-repeat: no-repeat; 
-    background-position: center;
     background-size: cover; 
     background-attachment: fixed; 
 
@@ -99,6 +104,12 @@ body
     font-size: clamp(32px, 5vw, 80px);
     font-weight: bold;
     margin: 3vh;
+    text-shadow:     
+    -2.25px -2.25px 0 #000,  
+     2.25px -2.25px 0 #000,
+    -2.25px  2.25px 0 #000,
+     2.25px  2.25px 0 #000; 
+
 }
 
 main 
@@ -167,19 +178,22 @@ main
 
 #home-tab:checked ~ .container {
     background-image: url("images/haikuyuu.png");
+    background-position: 15% center;
 }
 
 #streaming-tab:checked ~ .container {
     background-image: url("images/RamBckgrnd.jpg");
+    background-position: 50% center;
 }
-
 
 #link-tab:checked ~ .container {
     background-image: url("images/halo2.png");
+    background-position: 60% center;
 }
 
 #lists-tab:checked ~ .container {
     background-image: url("images/Itatchi.jpg");
+    background-position: 75% center;
 }
 
 #home-tab:checked ~ .container .tab-link {
